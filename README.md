@@ -30,9 +30,9 @@ Contact: mywebsite.com/socials<br>
 
 Then add them to the resources.csv like this:
 
-| Presenter name: | Presentation name: | Presentation type: | Room number: | Repo location: | Slides location | videos: | contact |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| "Paul Atreides" | "The Butlerian Jihad - AI and it's impact." | "keynote" | 1 | https://github.com/PythonIreland/python_ireland_event_resources | | https://www.youtube.com/watch?v=jepd7EVK-wA | mywebsite.com/socials |
+| Presenter name: | Presentation name: | Presentation type: | Day | Room number: | Repo location: | Slides location | videos: | contact |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| "Paul Atreides" | "The Butlerian Jihad - AI and it's impact." | "keynote" | Saturday | 1 | https://github.com/PythonIreland/python_ireland_event_resources | | https://www.youtube.com/watch?v=jepd7EVK-wA | mywebsite.com/socials |
 
 # PyCon 2025:
 This is a list of resources speakers can connect to their talk, such as location of slides, repos, or videos of past talks.
