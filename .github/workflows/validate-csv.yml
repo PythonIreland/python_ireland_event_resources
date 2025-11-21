@@ -28,6 +28,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade uv
+        uv venv .venv
+        source .venv/bin/activate
         uv pip install -r requirements.txt
         
     - name: Run CSV validation tests
