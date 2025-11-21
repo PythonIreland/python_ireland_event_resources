@@ -1,10 +1,16 @@
-import os
-import pytest
+# pylint: disable=line-too-long
+"""
+    This test will perform a sanity check on the edits made to the resources.csv located in each pycon folder:
+        pycon/2025/resources.csv
+"""
 from pathlib import Path
 from typing import List
 
 
 def count_columns(file_name: Path) -> None:
+    """
+    Count all of the comma separated rows of the header and compare that to each line in the file.
+    """
     first_line: bool            = True
     expected_column_count: int  = 0
 
@@ -18,7 +24,6 @@ def count_columns(file_name: Path) -> None:
 
             assert expected_column_count == len(line.split(","))
 
-
 def test_column_count() -> None:
     """
     This test will ensure all lines have the same number of columns as the header.
@@ -27,10 +32,9 @@ def test_column_count() -> None:
         Count the number of lines in the first line - the file header.
         Ensure all lines match this count.
     """
-    # TODO: Hard coded path for now:
     cwd: Path               = Path.cwd()
     basedir: Path           = Path(f"{cwd}/pycons/")
-    csv_files: List[Path]   = list(basedir.rglob("*/resources.csv")) 
+    csv_files: List[Path]   = list(basedir.rglob("*/resources.csv"))
     print("\n")
     for cur_path in csv_files:
         print(f"Testing file: {cur_path}")
