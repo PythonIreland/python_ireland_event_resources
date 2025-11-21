@@ -29,6 +29,9 @@ def test_column_count() -> None:
     """
     # TODO: Hard coded path for now:
     cwd: Path               = Path.cwd()
-    csv_realpath: Path      = Path(f"{cwd}/pycons/2025/resources.csv")
-    print(f"Testing file: {csv_realpath}")
-    count_columns(csv_realpath)
+    basedir: Path           = Path(f"{cwd}/pycons/")
+    csv_files: List[Path]   = list(basedir.rglob("*/resources.csv")) 
+    print("\n")
+    for cur_path in csv_files:
+        print(f"Testing file: {cur_path}")
+        count_columns(cur_path)
