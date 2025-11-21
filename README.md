@@ -38,3 +38,7 @@ Then add them to the resources.csv like this:
 This is a list of resources speakers can connect to their talk, such as location of slides, repos, or videos of past talks.
 
 [PyCon 2025:](https://github.com/PythonIreland/python_ireland_event_resources/blob/main/pycons/2025/resources.csv)
+
+
+# Previous PyCons:
+If you'd like to submit data for a previous PyCon but the folder isn't there - create it 🙂
