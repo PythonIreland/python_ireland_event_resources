@@ -5,6 +5,7 @@
 """
 from pathlib import Path
 from typing import List
+from csv import reader as csv_reader
 
 
 def count_columns(file_name: Path) -> None:
@@ -15,14 +16,14 @@ def count_columns(file_name: Path) -> None:
     expected_column_count: int  = 0
 
     with open(file_name, mode="r", encoding="utf-8") as my_file:
-        for line in my_file:
-
+        my_csv = csv_reader(my_file)
+        for line in my_csv:
             # All lines must match the header of the file:
             if first_line:
                 first_line = False
-                expected_column_count = len(line.split(","))
+                expected_column_count = len(line)
 
-            assert expected_column_count == len(line.split(","))
+            assert expected_column_count == len(line)
 
 def test_column_count() -> None:
     """
