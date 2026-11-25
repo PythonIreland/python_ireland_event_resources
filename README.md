@@ -5,6 +5,8 @@ This is an archive of the resources available for each Python Ireland event.
 
 ### Attendees: 
 If you are an attendee and are interested in finding out more about a talk, you can find relevant information here.<br>
+Here is a direct link to [PyCon 2026:](https://github.com/PythonIreland/python_ireland_event_resources/blob/main/pycons/2026/resources.csv)<br>
+<br>
 Here is a direct link to [PyCon 2025:](https://github.com/PythonIreland/python_ireland_event_resources/blob/main/pycons/2025/resources.csv)<br>
 Here is a direct link to [PyCon 2024:](https://github.com/PythonIreland/python_ireland_event_resources/blob/main/pycons/2024/resources.csv)<br>
 
